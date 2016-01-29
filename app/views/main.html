@@ -1,23 +1,72 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div layout="row" layout-align="center center">
+    <div layout="row" layout-padding style="margin-left:20%; margin-right:20%;" flex>
+        <md-whiteframe class="md-whiteframe-14dp" style=" height:100px;background-color:#E6E4EE;" flex="20">
+            <md-toolbar style="text-align:center" class="md md-primary">
+                <p>Devices</p>
+            </md-toolbar>
+            <!-- ng repeat on the device list-->
+            <div layout="column" style="background-color:#E6E4EE;" layout-align="center center">
+                <md-button style="margin:10px" ng-click="refreshInfo()" class="md-raised">
+                    Device 1
+                </md-button>
+                <md-button style="margin:10px" ng-click="refreshInfo()" class="md-raised">
+                    Device 2
+                </md-button>
+                <md-button style="margin:10px" ng-click="refreshInfo()" class="md-raised">
+                    Device 3
+                </md-button>
+                <md-button style="margin:10px" ng-click="refreshInfo()" class="md-raised">
+                    Device 4
+                </md-button>
+                <md-button style="margin:10px" ng-click="refreshInfo()" class="md-raised">
+                    Device 5
+                </md-button>
+            </div>
+        </md-whiteframe>
+        <md-whiteframe flex="80" flex-md="80" class="md-whiteframe-24dp" style=" background-color:#E6E4EE;">
+            <!--Specification Pane-->
+            <md-toolbar style="text-align:center" class="md md-warn">
+                <p>Specification</p>
+            </md-toolbar>
+            <div layout="column" layout-align="center center">
+                <!-- ng repeat on the device list-->
+                <div layout-padding>
+                    <md-card style="background-color:transparent;">
+                        <md-card-title layout="row" flex>
+                            <md-card-title-media flex="33">
+                                <div style="max-width: 200px; max-height: 200px ; ">
+                                    <img style="width:100%;height:100%;" src="{{imagePath}}" alt="Device Image">
+                                </div>
+                            </md-card-title-media>
+                            <md-card-title-text flex="66">
+                                <span class=" md-headline">Device Name: {{device.name}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Device ID: {{device.id}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">App Name: {{device.appName}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Manufacturer: {{device.manufacturer}} </span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Model Number: {{device.modelNumber}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Software Version: {{device.softwareVersion}} </span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-subhead"><p>Device Description: {{device.description}}</p></span>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-actions layout="row" layout-align="end center">
+                            <md-button class="md-raised md-primary">View Data</md-button>
+                            <md-button class="md-raised md-primary">View Analysis</md-button>
+                        </md-card-actions>
+                    </md-card>
+                </div>
+            </div>
+        </md-whiteframe>
+    </div>
 </div>
