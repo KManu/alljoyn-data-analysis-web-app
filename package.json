@@ -12,7 +12,7 @@
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-cssmin": "^0.12.0",
     "grunt-contrib-htmlmin": "^0.4.0",
-    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-contrib-imagemin": "1.0.0",
     "grunt-contrib-jshint": "^0.11.0",
     "grunt-contrib-uglify": "^0.7.0",
     "grunt-contrib-watch": "^0.6.1",
@@ -30,7 +30,8 @@
     "jshint-stylish": "^1.0.0",
     "karma-jasmine": "*",
     "karma-phantomjs-launcher": "*",
-    "time-grunt": "^1.0.0"
+    "time-grunt": "^1.0.0",
+    "vinyl-fs": "2.3.1"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -38,9 +39,15 @@
   "scripts": {
     "test": "grunt test"
   },
+  "main":"server.js",
+
   "dependencies": {
     "jasmine": "^2.3.2",
     "karma": "^0.13.15",
-    "phantomjs": "^1.9.18"
+    "phantomjs": "^1.9.18",
+    "express": "~4.0.0",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "method-override": "~1.0.0"
   }
 }
