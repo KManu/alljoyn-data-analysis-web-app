@@ -1,6 +1,6 @@
-<div layout="row" layout-align="center center">
-    <div layout="row" layout-padding style="margin-left:20%; margin-right:20%;" flex>
-        <md-whiteframe class="md-whiteframe-14dp" style=" height:100px;background-color:#E6E4EE;" flex="20">
+<div layout="row" layout-align="start center">
+    <div layout="row" layout-padding flex-offset-gt-md="20" flex="60">
+        <md-whiteframe class="md-whiteframe-14dp" style=" height:100px;background-color:#E6E4EE;" flex-gt-md="20" >
             <md-toolbar style="text-align:center" class="md md-primary">
                 <p>Devices</p>
             </md-toolbar>
@@ -23,7 +23,7 @@
                 </md-button>
             </div>
         </md-whiteframe>
-        <md-whiteframe flex="80" flex-md="80" class="md-whiteframe-24dp" style=" background-color:#E6E4EE;">
+        <md-whiteframe flex-gt-md="80" class="md-whiteframe-24dp" style=" background-color:#E6E4EE;">
             <!--Specification Pane-->
             <md-toolbar style="text-align:center" class="md md-warn">
                 <p>Specification</p>
@@ -32,13 +32,13 @@
                 <!-- ng repeat on the device list-->
                 <div layout-padding>
                     <md-card style="background-color:transparent;">
-                        <md-card-title layout="row" flex>
+                        <md-card-title layout="row" layout-sm="column" flex>
                             <md-card-title-media flex="33">
                                 <div style="max-width: 200px; max-height: 200px ; ">
                                     <img style="width:100%;height:100%;" src="{{imagePath}}" alt="Device Image">
                                 </div>
                             </md-card-title-media>
-                            <md-card-title-text flex="66">
+                            <md-card-title-text flex>
                                 <span class=" md-headline">Device Name: {{device.name}}</span>
                                 <br>
                                 <md-divider></md-divider>
@@ -68,5 +68,8 @@
                 </div>
             </div>
         </md-whiteframe>
+    </div>
+    <div flex flex-sm="0">
+      
     </div>
 </div>
