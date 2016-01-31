@@ -18,16 +18,16 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="webAppApp">
+<body ng-cloak style="background-image: url('/images/techtex.jpg');" ng-app="webAppApp">
     <!--[if lte IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Add your site or application content here -->
     <!--Header -->
-    <div ng-controller="IndexCtrl">
-        <md-whiteframe layout="row" layout-align="center center" style="background-color:#E8E8E8;" flex class="md-whiteframe-10dp">
+    <div>
+        <md-whiteframe layout="row" layout-align="center center" style="background-color:#E8E8E8;" flex="100" class="md-whiteframe-10dp">
             <md-button ng-href="/#/main">Home</md-button>
-            <md-button ng-href="/#/analysis">Analysis</md-button>
+            <md-button ng-href="/#/analysis">Data</md-button>
             <md-button ng-href="/#/about">About</md-button>
         </md-whiteframe>
     </div>
@@ -69,6 +69,7 @@
     <script src="scripts/controllers/Index.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/analysis.js"></script>
     <!-- endbuild -->
 </body>
 
