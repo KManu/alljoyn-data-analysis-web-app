@@ -1,0 +1,110 @@
+[
+  {
+    "deviceName": "Bed Pressure Sensor",
+    "deviceID": "66101100",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Cabinet Magnetic Sensor",
+    "deviceID": "679798",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Basin PIR Sensor",
+    "deviceID": "6697115",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Toilet Flush Sensor",
+    "deviceID": "84111105",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Shower PIR Sensor",
+    "deviceID": "83104111",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Fridge Magnetic Sensor",
+    "deviceID": "70114105",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Cupboard Magnetic Sensor",
+    "deviceID": "67117112",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Toaster Electric Sensor",
+    "deviceID": "8411197",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Cooktop PIR Sensor",
+    "deviceID": "67111111",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Microwave Electric Sensor",
+    "deviceID": "7710599",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Seat Pressure Sensor",
+    "deviceID": "8310197",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  },
+  {
+    "deviceName": "Maindoor Magnetic Sensor",
+    "deviceID": "7797105",
+    "AppName": "AllJoyn Web App",
+    "Manufacturer": "UG",
+    "ModelNumber": 2000,
+    "SoftwareVersion": 1,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
+  }
+]

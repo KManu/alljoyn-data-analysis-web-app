@@ -8,14 +8,40 @@
  * Controller of the webAppApp
  */
 angular.module('webAppApp')
-    .controller('MainCtrl', function($scope) {
-        this.awesomeThings = [
-            'HTML5 Boilerplate',
-            'AngularJS',
-            'Karma'
-        ];
+    .controller('MainCtrl', function($scope, dataService) {
+        //Get sensor list and event list 
+        console.log('MainCtrl');
+        $scope.sensorList = null;
+        $scope.sensor=null;
+
+        dataService.getSensors_A().then(function(data) {
+            $scope.sensorList = data;
+            console.log(data);
+        }, function(error) {
+            console.log('Error retrieving data');
+        });
+
+
+        $scope.updateDetails = function(sensor){
+            $scope.sensor = sensor;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         var count = 0;
+
         $scope.device = {
             name: 'Alljoyn Device 5',
             id: "ac32d-13f1e123-456b-9873",

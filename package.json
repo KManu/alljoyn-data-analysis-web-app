@@ -39,15 +39,15 @@
   "scripts": {
     "test": "grunt test"
   },
-  "main":"server.js",
-
+  "main": "server.js",
   "dependencies": {
+    "body-parser": "~1.0.0",
+    "cors": "^2.7.1",
+    "express": "~4.0.0",
     "jasmine": "^2.3.2",
     "karma": "^0.13.15",
-    "phantomjs": "^1.9.18",
-    "express": "~4.0.0",
+    "method-override": "~1.0.0",
     "morgan": "~1.0.0",
-    "body-parser": "~1.0.0",
-    "method-override": "~1.0.0"
+    "phantomjs": "^1.9.18"
   }
 }

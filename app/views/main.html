@@ -1,27 +1,15 @@
 <div layout="row" layout-align="start center">
     <div flex="5" flex-gt-sm="20">
     </div>
-    <div layout="row" layout-padding  flex="60">
+    <div layout="row" layout-padding flex="60">
         <md-whiteframe class="md-whiteframe-14dp" style=" height:100px;background-color:#E6E4EE;" flex-gt-md="20">
             <md-toolbar style="text-align:center" class="md md-primary">
                 <p>Devices</p>
             </md-toolbar>
             <!-- ng repeat on the device list-->
-            <div layout="column" style="background-color:#E6E4EE;" layout-align="center center">
-                <md-button style="margin:5px" ng-click="refreshInfo()" class="md-raised">
-                    Device 1
-                </md-button>
-                <md-button style="margin:5px" ng-click="refreshInfo()" class="md-raised">
-                    Device 2
-                </md-button>
-                <md-button style="margin:5px" ng-click="refreshInfo()" class="md-raised">
-                    Device 3
-                </md-button>
-                <md-button style="margin:5px" ng-click="refreshInfo()" class="md-raised">
-                    Device 4
-                </md-button>
-                <md-button style="margin:5px" ng-click="refreshInfo()" class="md-raised">
-                    Device 5
+            <div layout="column" style="background-color:#E6E4EE;" layout-align="center center" ng-repeat="sensor in sensorList">
+                <md-button style="margin:5px;" ng-click="updateDetails(sensor)" class="md-raised">
+                    {{sensor.deviceName}}
                 </md-button>
             </div>
         </md-whiteframe>
@@ -33,7 +21,12 @@
             <div layout="column" layout-align="center center">
                 <!-- ng repeat on the device list-->
                 <div layout-padding>
-                    <md-card style="background-color:transparent;">
+                    <md-card  style="background-color:transparent;text-align: center center;" ng-if="!sensor">
+                        <div layout-padding >
+                            <p>Please select a sensor device in the left pane</p>
+                        </div>
+                    </md-card>
+                    <md-card style="background-color:transparent;" ng-if="sensor">
                         <md-card-title layout="row" layout-sm="column" flex>
                             <md-card-title-media flex="33">
                                 <div style="max-width: 200px; max-height: 200px ; ">
@@ -41,25 +34,25 @@
                                 </div>
                             </md-card-title-media>
                             <md-card-title-text flex>
-                                <span class=" md-headline">Device Name: {{device.name}}</span>
+                                <span class=" md-headline">Device Name: {{sensor.deviceName}}</span>
                                 <br>
                                 <md-divider></md-divider>
-                                <span class="md-title">Device ID: {{device.id}}</span>
+                                <span class="md-title">Device ID: {{sensor.deviceID}}</span>
                                 <br>
                                 <md-divider></md-divider>
-                                <span class="md-title">App Name: {{device.appName}}</span>
+                                <span class="md-title">App Name: {{sensor.AppName}}</span>
                                 <br>
                                 <md-divider></md-divider>
-                                <span class="md-title">Manufacturer: {{device.manufacturer}} </span>
+                                <span class="md-title">Manufacturer: {{sensor.Manufacturer}} </span>
                                 <br>
                                 <md-divider></md-divider>
-                                <span class="md-title">Model Number: {{device.modelNumber}}</span>
+                                <span class="md-title">Model Number: {{sensor.ModelNumber}}</span>
                                 <br>
                                 <md-divider></md-divider>
-                                <span class="md-title">Software Version: {{device.softwareVersion}} </span>
+                                <span class="md-title">Software Version: {{sensor.SoftwareVersion}} </span>
                                 <br>
                                 <md-divider></md-divider>
-                                <span class="md-subhead"><p>Device Description: {{device.description}}</p></span>
+                                <span class="md-subhead"><p>Device Description: {{sensor.Description}}</p></span>
                             </md-card-title-text>
                         </md-card-title>
                         <md-card-actions layout="row" layout-align="end center">
