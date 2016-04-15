@@ -82,6 +82,39 @@ angular.module('webAppApp')
                     deferred.reject(error);
                 });
                 return deferred.promise;
+            },
+            getDescription_A: function() {
+                var deferred = $q.defer();
+                //get a description of the A dataset
+                $http({
+                    method: 'GET',
+                    url: SERVER.url + '/A/'
+                }).then(function(data) {
+                    deferred.resolve(data.data);
+                }, function(error) {
+                    deferred.reject(error);
+                });
+
+                return deferred.promise;
+            },
+            getDescription_B: function() {
+                var deferred = $q.defer();
+                //get a description of the B dataset
+                $http({
+                    method: 'GET',
+                    url: SERVER.url + '/B/'
+                }).then(function(data) {
+                    deferred.resolve(data.data);
+                }, function(error) {
+                    deferred.reject(error);
+                });
+
+                return deferred.promise;
+            },
+            getSensorData: function ( sensorID){
+                var deferred = $q.defer();
+                //get data for specific sensor
+                //
             }
 
         };

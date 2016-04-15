@@ -1,0 +1,62 @@
+<div flex layout="row" layout-padding layout-align="center center">
+    <md-whiteframe flex="60" layout="column" class="md-whiteframe-24dp">
+        <md-content>
+            <md-toolbar layout-align="center center" class="md-primary">
+                {{sensor.deviceName}} Data
+            </md-toolbar>
+            <div layout="column" layout-padding>
+                <div>
+                    <md-card style="background-color:transparent;">
+                        <md-card-title layout="row" layout-sm="column" flex>
+                            <md-card-title-text flex>
+                                <span class=" md-headline">Device Name: {{sensor.deviceName}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Device ID: {{sensor.deviceID}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">App Name: {{sensor.AppName}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Manufacturer: {{sensor.Manufacturer}} </span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Model Number: {{sensor.ModelNumber}}</span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-title">Software Version: {{sensor.SoftwareVersion}} </span>
+                                <br>
+                                <md-divider></md-divider>
+                                <span class="md-subhead"><p>Device Description: {{sensor.Description}}</p></span>
+                            </md-card-title-text>
+                        </md-card-title>
+                    </md-card>
+                </div>
+                <!-- Angular table listing the events for the current sensor -->
+                <div>
+                    <md-toolbar layout-align="center center" class="md-warn">
+                        Activation History
+                    </md-toolbar>
+                    <md-table-container>
+                        <table md-table>
+                            <thead md-head md-order="myOrder">
+                                <th md-column>Event Start</th>
+                                <th md-column>Event End</th>
+                            </thead>
+                            <tbody md-body>
+                                <tr ng-repeat="event in sensorEvents">
+                                    <td md-cell>
+                                        {{event.start}}
+                                    </td>
+                                    <td md-cell>
+                                        {{event.end}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </md-table-container>
+                </div>
+            </div>
+        </md-content>
+    </md-whiteframe>
+</div>

@@ -18,13 +18,13 @@ angular.module('webAppApp')
             $scope.sensorList = data;
             console.log(data);
         }, function(error) {
-            console.log('Error retrieving data');
+            console.log('Error retrieving data'+ error);
         });
 
 
         $scope.updateDetails = function(sensor){
             $scope.sensor = sensor;
-        }
+        };
 
 
 
