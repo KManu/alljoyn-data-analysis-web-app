@@ -3,10 +3,11 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var cors = require('cors');
-var sensorAJSON = require('./sensorList_A.json');
+var sensorAJSON = require('./SensorList_A.json');
 var sensorBJSON = require('./sensorList_B.json');
 var eventAJSON = require('./EventList_A.json');
 var eventBJSON = require('./EventList_B.json');
+
 var app = express();
 var api = express();
 
@@ -93,6 +94,6 @@ app.listen(app.get('appPort'), function() {
 
 api.listen(app.get('apiPort'), function() {
     console.log('****************************************');
-    console.log('>> Serving API on port 7654');
+    console.log('>> Serving API on port 4567/api/');
     console.log('****************************************');
 });

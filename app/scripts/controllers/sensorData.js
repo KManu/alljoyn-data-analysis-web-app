@@ -8,29 +8,23 @@
  * Controller of the webAppApp
  */
 angular.module('webAppApp')
-    .controller('SensorDataCtrl', function($scope, $routeParams) {
+    .controller('SensorDataCtrl', function($scope, $routeParams, dataService) {
 
         console.log('Sensor Data');
-        $scope.hello = null;
-
-        $scope.sensor = {
-            "deviceName": "Test Sensor",
-            "deviceID": "66101100",
-            "AppName": "AllJoyn Web App",
-            "Manufacturer": "UG",
-            "ModelNumber": 2000,
-            "SoftwareVersion": 1,
-            "Description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et harum praesentium, deserunt voluptatem. Placeat repellat fugiat quas molestiae? Commodi id beatae blanditiis accusamus numquam a tempora optio incidunt aliquid!"
-        };
-
-        $scope.sensorEvents = [{
-        	start: 1,
-        	end: 5
-        },{
-        	start: 7,
-        	end: 15
-        }];
+        $scope.sensor = null;
+        $scope.sensorEvents = null;
+        var ID = $routeParams.sensorID;
+        dataService.getSensors_A().then(function(data) {
+        	for(var i=0; i < data.length; i++){
+        		if(data[i].deviceID === ID ){
+        			$scope.sensor=data[i];
+        		}
+        	}
+        }, function(error) {
+        	console.log('Error getting sensor list '+error);
+        });
         
+
 
 
 

@@ -110,11 +110,6 @@ angular.module('webAppApp')
                 });
 
                 return deferred.promise;
-            },
-            getSensorData: function ( sensorID){
-                var deferred = $q.defer();
-                //get data for specific sensor
-                //
             }
 
         };
