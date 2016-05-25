@@ -2,40 +2,51 @@
     <md-whiteframe flex="80" layout="column" class="md-whiteframe-24dp">
         <md-content>
             <md-toolbar layout-align="center center" class="md-primary">
-                Data
+                Information
             </md-toolbar>
             <div layout-align="center center" layout-padding>
-                <div layout-wrap layout="row" layout-align="center center" layout-padding>
-                    <!--Data set buttons. Obviously to be ng repeated-->
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
-                    <md-button class="md-primary"> Data Set</md-button>
+                <div>
+                    Locations:
+                    <bold ng-repeat="place in dataInfo.places"> {{place}},</bold>
                 </div>
                 <div>
-                    <!--Data set content tabs-->
-                    <md-tabs md-center-tabs class="md-warn" md-dynamic-height md-border-bottom>
-                        <md-tab label="Raw Data">
-                            <div layout="column" layout-padding layout-align="center center">
-                                Raw Data Body
+                    Duration: {{dataInfo.duration}} days.
+                </div>
+                <div>
+                </div>
+                <div layout-wrap layout="row" layout-align="center center" layout-padding>
+                    <md-button class="md-primary" ng-click="selectInfo('freq')"> Frequency Analysis</md-button>
+                    <md-button class="md-primary" ng-click="selectInfo('seq')"> Sequential Analysis</md-button>
+                    <md-button class="md-primary" ng-click="selectInfo('clust')"> Cluster Analysis</md-button>
+                </div>
+                <div layout="column">
+                    <md-toolbar layout-align="center center" class="md-warn">
+                        Results
+                    </md-toolbar>
+                    <div>
+                        <p>{{caption}}</p>
+                    </div>
+                    <div layout="column" layout-align="center center">
+                        <!-- <div flex="30" ng-if="tab === 'seq'">
+                            <div>
+                                <img src={{legendURL}} alt="">
                             </div>
-                        </md-tab>
-                        <md-tab label="Analysis Results">
-                            <div layout="column" layout-padding layout-align="center center">
-                                Analysis Body
+                        </div> -->
+                        <div layout="column">
+                            <div layout="column" layout-align="center center" style="max-width: 100%;" ng-repeat="data in images">
+                                <div style="max-width: 100%;" layout="row" layout-align="center center">
+                                    <div flex="30" ng-if="tab === 'seq'">
+                                        <div>
+                                            <img src={{legendURL}} alt="">
+                                        </div>
+                                    </div>
+                                    <img flex style="max-width: 100%" src="{{data.path}}" alt="">
+                                </div>
+                                <p>{{data.caption}}</p>
+                                <md-divider></md-divider>
                             </div>
-                        </md-tab>
-                    </md-tabs>
+                        </div>
+                    </div>
                 </div>
             </div>
         </md-content>

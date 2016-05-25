@@ -16,6 +16,7 @@ api.set('apiPort', process.env.PORT || 7654);
 //api.use(cors());
 
 app.use(express.static(__dirname + '/dist')); // set the static files location /public/img will be /img for users
+app.use(express.static('analysis'));
 app.use(morgan('dev')); // log every request to the console
 app.use(bodyParser()); // pull information from html in POST
 app.use(methodOverride()); // simulate DELETE and PUT
@@ -76,7 +77,6 @@ router.get('/B/eventList', function(req, res) {
 router.get('/B/sensorList', function(req, res) {
     res.json(sensorBJSON);
 });
-
 
 
 
